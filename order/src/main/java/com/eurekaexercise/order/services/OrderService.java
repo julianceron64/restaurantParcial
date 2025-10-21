@@ -33,6 +33,6 @@ public class OrderService {
     }
 
     private UserDTO fetchUserDetailsFromUserId(Long userId) {
-        return restTemplate.getForObject("http://USER-SERVICE/user/fetchUserById/" + userId, UserDTO.class);
+        return restTemplate.getForObject("http://USER-SERVICE/user/fetchById/" + userId, UserDTO.class);
     }
 }
